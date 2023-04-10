@@ -1,0 +1,77 @@
+@import url(./style.css);
+
+.header__info-teams-text {
+  font-size: 2rem;
+  text-align: justify;
+  padding: 2rem 0;
+}
+
+.header__info-teams-text span {
+  font-weight: var(--semi-bold);
+}
+
+.header__teams {
+  margin-bottom: 2rem;
+}
+
+.header .header__teams .header__teams-logos {
+  display: none;
+}
+
+.hero__team .hero__team-info {
+  padding: 2rem;
+}
+.hero__team .hero__team-info>img {
+  display: block;
+  padding-bottom: 2rem;
+  margin: 0 auto;
+}
+
+.hero__team-info .hero__team-members {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  gap: 2rem;
+}
+
+.hero__team-info .hero__team-members .hero__team-member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 7rem;
+}
+
+@media(min-width: 768px) {
+  .hero .hero__team {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .header__teams {
+    padding-bottom: 5rem;
+  }
+  .header .header__teams .header__teams-logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .hero__team-info .hero__team-members {
+    overflow-x: visible;
+    justify-content: center;
+  }
+}
+
+@media(min-width: 990px){
+    .hero__team .hero__team-info {
+      display: flex;
+      gap: 4rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+    .header .header__teams .header__teams-logos {
+      grid-template-columns: repeat(4, 1fr);
+    }
+}
