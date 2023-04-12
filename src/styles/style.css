@@ -261,9 +261,11 @@ button {
   padding: 2rem 0;
   place-items: center;
 }
+
 .hero .blogs {
   padding: 1rem;
 }
+
 .hero .blogs .card {
   padding: 1rem;
   background-color: var(--primary-color);
@@ -377,7 +379,7 @@ button {
     height: 20rem;
     margin-bottom: 5rem;
   }
-  .hero .hero__container {
+  .hero .hero__container, .hero .blogs {
     width: 80%;
     margin: 0 auto;
   }
