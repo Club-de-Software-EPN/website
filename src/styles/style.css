@@ -125,7 +125,6 @@ button {
   display: none;
   position: absolute;
   bottom: 0px;
-  /* z-index: -10; */
 }
 
 .background .background__semicolon {
@@ -256,7 +255,7 @@ button {
 
 .hero .hero__teams {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   padding: 2rem 0;
   place-items: center;
@@ -264,6 +263,14 @@ button {
 
 .hero .blogs {
   padding: 1rem;
+}
+
+.hero .blogs .blogs__container {
+  position: relative;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  column-gap: 2rem;
 }
 
 .hero .blogs .card {
@@ -313,23 +320,17 @@ button {
   transition: .5s;
 }
 
-@media(min-width: 600px){
-  .hero .hero__teams {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+/* list-style: none;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 2rem; */
 
 @media(min-width: 768px){
-  .background .background__left-wave {
-    display: block;
-  }
-  .background .background__rigth-wave {
-    display: block;
-  }
-  .background .background__bottom-wave {
-    display: block;
-  }
-  .hero__background-bottom-wave {
+  .background .background__left-wave,
+  .background .background__rigth-wave,
+  .background .background__bottom-wave,
+  .hero__background-bottom-wave
+  {
     display: block;
   }
   .header {
@@ -382,11 +383,6 @@ button {
   .hero .hero__container, .hero .blogs {
     width: 80%;
     margin: 0 auto;
-  }
-  .hero .blogs .blogs__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
   }
   .hero .blogs .card  {
     padding: 2rem 3rem;
