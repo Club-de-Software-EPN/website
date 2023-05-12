@@ -7,8 +7,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        teams: resolve(__dirname, 'equipos.html'),
-        projects: resolve(__dirname, 'proyectos.html')
+        teams: resolve(__dirname, 'equipos.html')
       }
     }
   }

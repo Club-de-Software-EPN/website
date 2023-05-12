@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../../public/assets/imgs/favicon.ico"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./register.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    
+      <header class="header-register">
+        <div class="header__info-register">
+            <div class="header__top">
+                <a class="header__logo" href="/index.html">
+                  <img src="/assets/svgs/club_logo.svg" alt="Logo Club de Software" />
+                </a>
+                <nav class="header__nav">
+                  <a class="underline-animation" href="../../index.html">Home</a>
+                </nav>
+              </div>
+          <div>
+            <h2>Registrate</h2>
+            <p class="text-register">JavaScript Principiantes - Virtual | Mayo 29</p>
+          </div>
+          
+            <svg
+              width="100"
+              class="background__semicolon-register"
+              height="270"
+              viewBox="0 0 100 270"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 238.442C34.8837 227.186 52.3256 209.79 52.3256 187.277L50 145.322L74.4186 181.137C67.4419 186.254 58.1395 189.324 47.6744 189.324C25.5814 189.324 4.65116 176.021 4.65116 153.508C4.65116 132.019 24.4186 117.692 50 117.692C82.5581 117.692 100 140.205 100 178.067C100 223.093 70.9302 254.815 16.2791 269.141L0 238.442ZM0 40.9448C0 18.4321 18.6047 0.0126953 46.5116 0.0126953C74.4186 0.0126953 93.0233 18.4321 93.0233 40.9448C93.0233 64.4808 74.4186 81.8769 46.5116 81.8769C18.6047 81.8769 0 64.4808 0 40.9448Z"
+                fill="#4E1074"
+                fill-opacity="0.76"
+              />
+            </svg>
+          
+        </div>
+        <main class="container_form">
+          <form action="" id="formulary" class="container_form-register">
+            <label for="">Nombres <br> <input id="nombres" name="nombres" type="text" required maxlength="15"/></label
+            ><label for="">Apellidos <br> <input type="text" id="apellidos" name="apellidos" required maxlength="15"/></label
+            ><label for="">Correo <br> <input type="email" id="correo" name="correo" required maxlength="40" /></label
+            ><label for="">Celular <br> <input type="text" id="celular" name="celular" placeholder="Ejemplo: 0988776655" required maxlength="10"/></label>
+            <label for=""
+              >Estudiante EPN: 
+              <select name="estudianteEpn" id="estudianteEpn">
+                <option value="Si" selected>Si</option>
+                <option value="No">No</option>
+              </select>
+            </label>
+            <button type="submit" class="btn btn-send"><i class='bx bx-mail-send'></i> Enviar</button>
+          </form>
+          <div id="exito" class="exito inactive">
+            <i class='bx bx-check-circle'></i>
+            <p>Tu registro fue exitoso!</p>
+            <a class="underline-animation" href="../../index.html"><i class='bx bx-home-smile'></i></a>
+          </div>
+        </main>
+      </header>
+    </div>
+    <script src="../js/register.js"></script>
+  </body>
+</html>

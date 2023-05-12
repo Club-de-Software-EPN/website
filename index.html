@@ -1,199 +1,357 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./public/assets/imgs/favicon.ico"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Club de Software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home - Club de Software</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./src/styles/normalize.css">
-  <link rel="stylesheet" href="./src/styles/style.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-
-<body>
-  <div class="background">
-    <svg id="visual" class="background__left-wave" viewBox="0 0 900 900" width="900" height="900"
-      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-      <path
-        d="M66 0L65.8 21.5C65.7 43 65.3 86 60.7 128.8C56 171.7 47 214.3 44.3 257.2C41.7 300 45.3 343 44 385.8C42.7 428.7 36.3 471.3 39.3 514.2C42.3 557 54.7 600 57.5 642.8C60.3 685.7 53.7 728.3 49 771.2C44.3 814 41.7 857 40.3 878.5L39 900L0 900L0 878.5C0 857 0 814 0 771.2C0 728.3 0 685.7 0 642.8C0 600 0 557 0 514.2C0 471.3 0 428.7 0 385.8C0 343 0 300 0 257.2C0 214.3 0 171.7 0 128.8C0 86 0 43 0 21.5L0 0Z"
-        fill="#4E1074" stroke-linecap="round" stroke-linejoin="miter"></path>
-    </svg>
-    <header class="header">
-      <div class="header__top">
-        <a class="header__logo" href="/index.html">
-          <img src="/assets/svgs/club_logo.svg" alt="Logo Club de Software">
-        </a>
-        <nav class="header__nav">
-          <a class="underline-animation" href="#">Blog</a>
-          <a class="underline-animation" href="#">Quienes Somos</a>
-          <a class="underline-animation" href="./proyectos.html">Proyectos</a>
-        </nav>
-      </div>
-      <div class="header__info">
+  <body>
+    <div class="background">
+      <svg
+        id="visual"
+        class="background__left-wave"
+        viewBox="0 0 900 900"
+        width="900"
+        height="900"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+      >
+        <path
+          d="M66 0L65.8 21.5C65.7 43 65.3 86 60.7 128.8C56 171.7 47 214.3 44.3 257.2C41.7 300 45.3 343 44 385.8C42.7 428.7 36.3 471.3 39.3 514.2C42.3 557 54.7 600 57.5 642.8C60.3 685.7 53.7 728.3 49 771.2C44.3 814 41.7 857 40.3 878.5L39 900L0 900L0 878.5C0 857 0 814 0 771.2C0 728.3 0 685.7 0 642.8C0 600 0 557 0 514.2C0 471.3 0 428.7 0 385.8C0 343 0 300 0 257.2C0 214.3 0 171.7 0 128.8C0 86 0 43 0 21.5L0 0Z"
+          fill="#4E1074"
+          stroke-linecap="round"
+          stroke-linejoin="miter"
+        ></path>
+      </svg>
+      <header class="header">
+        <div class="header__top">
+          <a class="header__logo" href="/index.html">
+            <img src="/assets/svgs/club_logo.svg" alt="Logo Club de Software" />
+          </a>
+          <nav class="header__nav">
+            <a class="underline-animation" href="./src/scenes/indexRegister.html">Cursos</a>
+            <a class="underline-animation" href="./equipos.html">Equipos</a>
+            <a class="underline-animation" href="./src/scenes/indexProyect.html"
+              >Proyectos</a
+            >
+          </nav>
+        </div>
+        <div class="header__info">
+          <div>
+            <h1>Club de Software EPN</h1>
+            <p class="header__info-text">
+              Una comunidad creada por desarrolladores para desarrolladores.
+            </p>
+            <div class="header__info-join">
+              <p>Forma parte de nuestra comunidad</p>
+              <button type="button">
+                <a class="btn" href="#">Aplica aquí</a>
+              </button>
+            </div>
+          </div>
+          <div>
+            <svg
+              width="100"
+              class="background__semicolon"
+              height="270"
+              viewBox="0 0 100 270"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 238.442C34.8837 227.186 52.3256 209.79 52.3256 187.277L50 145.322L74.4186 181.137C67.4419 186.254 58.1395 189.324 47.6744 189.324C25.5814 189.324 4.65116 176.021 4.65116 153.508C4.65116 132.019 24.4186 117.692 50 117.692C82.5581 117.692 100 140.205 100 178.067C100 223.093 70.9302 254.815 16.2791 269.141L0 238.442ZM0 40.9448C0 18.4321 18.6047 0.0126953 46.5116 0.0126953C74.4186 0.0126953 93.0233 18.4321 93.0233 40.9448C93.0233 64.4808 74.4186 81.8769 46.5116 81.8769C18.6047 81.8769 0 64.4808 0 40.9448Z"
+                fill="#4E1074"
+                fill-opacity="0.76"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="header__members"></div>
+      </header>
+      <!-- wave -->
+      <svg
+        id="visual"
+        class="background__rigth-wave"
+        viewBox="0 0 900 900"
+        width="900"
+        height="900"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+      >
+        <path
+          d="M873 900L873.2 878.5C873.3 857 873.7 814 871.5 771.2C869.3 728.3 864.7 685.7 861 642.8C857.3 600 854.7 557 855.5 514.2C856.3 471.3 860.7 428.7 860.5 385.8C860.3 343 855.7 300 854.3 257.2C853 214.3 855 171.7 852.5 128.8C850 86 843 43 839.5 21.5L836 0L900 0L900 21.5C900 43 900 86 900 128.8C900 171.7 900 214.3 900 257.2C900 300 900 343 900 385.8C900 428.7 900 471.3 900 514.2C900 557 900 600 900 642.8C900 685.7 900 728.3 900 771.2C900 814 900 857 900 878.5L900 900Z"
+          fill="#4E1074"
+          stroke-linecap="round"
+          stroke-linejoin="miter"
+        ></path>
+      </svg>
+      <svg
+        id="visual"
+        class="background__bottom-wave"
+        viewBox="0 0 2000 600"
+        width="2000"
+        height="600"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+      >
+        <path
+          d="M0 560L47.7 561.5C95.3 563 190.7 566 285.8 568C381 570 476 571 571.2 571.2C666.3 571.3 761.7 570.7 857 568.3C952.3 566 1047.7 562 1143 560C1238.3 558 1333.7 558 1428.8 560.7C1524 563.3 1619 568.7 1714.2 568.2C1809.3 567.7 1904.7 561.3 1952.3 558.2L2000 555L2000 601L1952.3 601C1904.7 601 1809.3 601 1714.2 601C1619 601 1524 601 1428.8 601C1333.7 601 1238.3 601 1143 601C1047.7 601 952.3 601 857 601C761.7 601 666.3 601 571.2 601C476 601 381 601 285.8 601C190.7 601 95.3 601 47.7 601L0 601Z"
+          fill="#2B133A"
+          stroke-linecap="round"
+          stroke-linejoin="miter"
+        ></path>
+      </svg>
+    </div>
+    <main class="hero">
+      <section class="hero__container">
         <div>
-          <h1>Club de Software EPN</h1>
-          <p class="header__info-text">Una comunidad creada por desarrolladores para desarrolladores</p>
-          <div class="header__info-join">
-            <p>Forma parte de nuestra comunidad</p>
-            <button type="button">
-              <a href="#">Aplica aquí</a>
+          <a href="./equipos.html">
+            <h2>Equipos</h2>
+          </a>
+          <ul>
+            <li>
+              Un equipo esta conformado por personas con las mismas ganas de
+              aprender sobre una temática en específico.
+            </li>
+            <li>
+              Los equipos trabajan en proyectos, en dónde podrás aprender sobre
+              el tema que más te interese practicando.
+            </li>
+            <li>Reúnete con tu equipo y empieza a aprender ya!</li>
+            <a
+              href="./equipos.html"
+              class="underline-animation hero__teams-link"
+              >Ver mas...</a
+            >
+          </ul>
+        </div>
+        <div class="hero__teams">
+          <a href="./equipos.html#desarrollo-web">
+            <img src="/assets/imgs/web.png" alt="Logo equipo Desarrollo Web" />
+          </a>
+          <a href="./equipos.html#inteligencia-artificial">
+            <img
+              src="/assets/imgs/ia.png"
+              alt="Logo equipo Inteligencia Artificial"
+            />
+          </a>
+          <a href="./equipos.html#ciberseguridad">
+            <img
+              src="/assets/imgs/security.png"
+              alt="Logo equipo Ciberseguridad"
+            />
+          </a>
+          <a href="./equipos.html#big-data">
+            <img src="/assets/imgs/big_data.png" alt="Logo equipo Big Data" />
+          </a>
+        </div>
+      </section>
+      <section class="blogs">
+        <h2>Últimas publicaciones</h2>
+        <div class="blogs__container">
+          <div class="card">
+            <p class="blogs__card-title">Qué es Api y Api Rest</p>
+            <p class="blogs__card-caption">
+              Conoce el concepto de Api y Api Rest, como desarrollador saberlo
+              es muy importante actualmente la gran mayoria de internet lo
+              utiliza.
+            </p>
+            <div class="blogs__card-info">
+              <p>2 min</p>
+              <div class="card__author">
+                <svg class="svg-icon1" viewBox="0 0 30 30">
+                  <path
+                    d="M16.853,8.355V5.888c0-3.015-2.467-5.482-5.482-5.482H8.629c-3.015,0-5.482,2.467-5.482,5.482v2.467l-2.741,7.127c0,1.371,4.295,4.112,9.594,4.112s9.594-2.741,9.594-4.112L16.853,8.355z M5.888,17.367c-0.284,0-0.514-0.23-0.514-0.514c0-0.284,0.23-0.514,0.514-0.514c0.284,0,0.514,0.23,0.514,0.514C6.402,17.137,6.173,17.367,5.888,17.367z M5.203,10c0-0.377,0.19-0.928,0.423-1.225c0,0,0.651-0.831,1.976-0.831c0.672,0,1.141,0.309,1.141,0.309C9.057,8.46,9.315,8.938,9.315,9.315v1.028c0,0.188-0.308,0.343-0.685,0.343H5.888C5.511,10.685,5.203,10.377,5.203,10z M7.944,16.853H7.259v-1.371l0.685-0.685V16.853z M9.657,16.853H8.629v-2.741h1.028V16.853zM8.972,13.426v-1.028c0-0.568,0.46-1.028,1.028-1.028c0.568,0,1.028,0.46,1.028,1.028v1.028H8.972z M11.371,16.853h-1.028v-2.741h1.028V16.853z M12.741,16.853h-0.685v-2.056l0.685,0.685V16.853z M14.112,17.367c-0.284,0-0.514-0.23-0.514-0.514c0-0.284,0.23-0.514,0.514-0.514c0.284,0,0.514,0.23,0.514,0.514C14.626,17.137,14.396,17.367,14.112,17.367z M14.112,10.685h-2.741c-0.377,0-0.685-0.154-0.685-0.343V9.315c0-0.377,0.258-0.855,0.572-1.062c0,0,0.469-0.309,1.141-0.309c1.325,0,1.976,0.831,1.976,0.831c0.232,0.297,0.423,0.848,0.423,1.225S14.489,10.685,14.112,10.685z M18.347,15.801c-0.041,0.016-0.083,0.023-0.124,0.023c-0.137,0-0.267-0.083-0.319-0.218l-2.492-6.401c-0.659-1.647-1.474-2.289-2.905-2.289c-0.95,0-1.746,0.589-1.754,0.595c-0.422,0.317-1.084,0.316-1.507,0C9.239,7.505,8.435,6.916,7.492,6.916c-1.431,0-2.246,0.642-2.906,2.292l-2.491,6.398c-0.069,0.176-0.268,0.264-0.443,0.195c-0.176-0.068-0.264-0.267-0.195-0.444l2.492-6.401c0.765-1.911,1.824-2.726,3.543-2.726c1.176,0,2.125,0.702,2.165,0.731c0.179,0.135,0.506,0.135,0.685,0c0.04-0.029,0.99-0.731,2.165-0.731c1.719,0,2.779,0.814,3.542,2.723l2.493,6.404C18.611,15.534,18.524,15.733,18.347,15.801z"
+                  ></path>
+                </svg>
+                <div class="card_container_pdf">
+                  <p class="name">Descargue contenido</p>
+                  <a href="./public/assets/pdfs/Api&ApiRest.pdf" download="./public/assets/pdfs/Api&ApiRest.pdf">Aqui</a>
+                  <p class="date">Abril 03, 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-black">
+            <p class="blogs__card-title">Nuevos Métodos de Array JavaScript</p>
+            <p class="blogs__card-caption">
+              JavaScript como pionero en la web siempre se encuentra en
+              constante cambio, informate de los últimos métodos.
+            </p>
+            <div class="blogs__card-info">
+              <p>1 min</p>
+              <div class="card__author">
+                <svg
+                  class="svg-icon2"
+                  viewBox="0 0 30 30"
+                  enable-background="new 0 0 20 20"
+                  xml:space="preserve"
+                >
+                  <circle cx="3.274" cy="6.198" r="0.585"></circle>
+                  <rect x="6.198" y="4.736" width="0.585" height="2.34"></rect>
+                  <path
+                    d="M15.849,11.669v-1.064l-1.072-0.715l-0.829,1.659c-0.428,0.174-0.73,0.592-0.73,1.083c0,0.265,0.091,0.507,0.24,0.703l-0.201,2.806h1.759l0.191-2.676c0.216-0.212,0.35-0.507,0.35-0.833c0-0.102-0.017-0.2-0.042-0.294L15.849,11.669z M14.387,13.217c-0.322,0-0.585-0.262-0.585-0.585c0-0.322,0.262-0.585,0.585-0.585c0.322,0,0.585,0.262,0.585,0.585C14.971,12.954,14.709,13.217,14.387,13.217z"
+                  ></path>
+                  <polygon
+                    points="15.721,7.368 19.066,7.368 19.066,3.859 16.141,2.894 15.556,2.104 11.462,2.104 10.877,2.894 8.538,3.859 8.538,7.368 11.297,7.368 	"
+                  ></polygon>
+                  <path
+                    d="M5.029,7.368h0.585V4.444h-2.34l-1.755,1.17v0.877H0.496c-0.081,0-0.146,0.065-0.146,0.146s0.065,0.146,0.146,0.146h1.024v0.585H0.642C0.48,7.368,0.35,7.499,0.35,7.66S0.48,7.953,0.642,7.953h3.802L5.029,7.368zM3.274,7.076c-0.485,0-0.877-0.393-0.877-0.877s0.393-0.877,0.877-0.877s0.877,0.393,0.877,0.877S3.758,7.076,3.274,7.076z"
+                  ></path>
+                  <path
+                    d="M18.96,16.141l-0.631-2.944c0.094-0.168,0.151-0.359,0.151-0.565c0-0.295-0.113-0.561-0.292-0.766v-1.427l0.71-2.486H9.708c-0.646,0-1.17,0.524-1.17,1.17c0,0.162,0.033,0.317,0.093,0.457l-0.682,2.047c-0.346,0.203-0.58,0.575-0.58,1.005c0,0.152,0.031,0.297,0.084,0.431l-1.099,3.079h1.863l0.407-1.141l1.504,0.725l0.761-1.581l-1.51-0.711c0.201-0.209,0.33-0.488,0.33-0.801c0-0.162-0.033-0.316-0.093-0.457l0.556-1.668l1.73-1.384h2.778l1.755,1.17v1.48v0.093c-0.18,0.206-0.292,0.472-0.292,0.766c0,0.392,0.195,0.738,0.492,0.95l0.536,2.559H18.96z M8.538,13.217c-0.322,0-0.585-0.262-0.585-0.585c0-0.322,0.262-0.585,0.585-0.585c0.322,0,0.585,0.262,0.585,0.585C9.123,12.954,8.86,13.217,8.538,13.217z M9.708,9.708c-0.322,0-0.585-0.262-0.585-0.585c0-0.322,0.262-0.585,0.585-0.585c0.322,0,0.585,0.262,0.585,0.585C10.292,9.445,10.03,9.708,9.708,9.708z M17.311,8.538c0.322,0,0.585,0.262,0.585,0.585c0,0.322-0.262,0.585-0.585,0.585s-0.585-0.262-0.585-0.585C16.726,8.8,16.988,8.538,17.311,8.538z M16.726,12.632c0-0.322,0.262-0.585,0.585-0.585s0.585,0.262,0.585,0.585c0,0.322-0.262,0.585-0.585,0.585S16.726,12.954,16.726,12.632z"
+                  ></path>
+                  <rect x="7.368" y="4.736" width="0.585" height="2.34"></rect>
+                  <polygon
+                    points="11.89,14.086 11.468,14.288 10.517,16.265 10.622,16.721 11.413,17.101 12.68,14.466 	"
+                  ></polygon>
+                  <polygon
+                    points="19.285,16.726 17.092,16.726 16.726,17.019 16.726,17.896 19.65,17.896 19.65,17.019 	"
+                  ></polygon>
+                  <polygon
+                    points="12.997,16.726 12.632,17.019 12.632,17.896 15.556,17.896 15.556,17.019 15.191,16.726 	"
+                  ></polygon>
+                  <polygon
+                    points="5.979,16.726 5.613,17.019 5.613,17.896 8.538,17.896 8.538,17.019 8.172,16.726 	"
+                  ></polygon>
+                  <path
+                    d="M5.933,13.752l0.558,0.263l0.344-0.963c-0.035-0.138-0.052-0.278-0.052-0.419c0-0.536,0.253-1.044,0.672-1.375l0.634-1.903l-2.461,2.109c-0.005,0-0.01-0.002-0.015-0.002c-0.646,0-1.17,0.524-1.17,1.17c0,0.646,0.524,1.17,1.17,1.17C5.725,13.802,5.831,13.781,5.933,13.752z M5.029,12.632c0-0.322,0.262-0.585,0.585-0.585s0.585,0.262,0.585,0.585c0,0.322-0.262,0.585-0.585,0.585S5.029,12.954,5.029,12.632z"
+                  ></path>
+                </svg>
+                <div class="card_container_pdf">
+                  <p class="name">Descargue contenido</p>
+                  <a href="./public/assets/pdfs/MetodosArraysJS.pdf" download="./public/assets/pdfs/MetodosArraysJS.pdf">Aqui</a>
+                  <p class="date">Abril 24, 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-rose">
+            <p class="blogs__card-title">Especificidad Css</p>
+            <p class="blogs__card-caption">
+              Si eres desarrollador frontend es un concepto básico que lo
+              debes dominar.
+            </p>
+            <div class="blogs__card-info">
+              <p>2 min</p>
+              <div class="card__author">
+                <svg class="svg-icon" viewBox="0 0 30 30">
+                  <path
+                    d="M18.21,16.157v-8.21c0-0.756-0.613-1.368-1.368-1.368h-1.368v1.368v1.368v6.841l-1.368,3.421h5.473L18.21,16.157z"
+                  ></path>
+                  <path
+                    d="M4.527,9.316V7.948V6.579H3.159c-0.756,0-1.368,0.613-1.368,1.368v8.21l-1.368,3.421h5.473l-1.368-3.421V9.316z"
+                  ></path>
+                  <path
+                    d="M14.766,5.895h0.023V5.21c0-2.644-2.145-4.788-4.789-4.788S5.211,2.566,5.211,5.21v0.685h0.023H14.766zM12.737,3.843c0.378,0,0.684,0.307,0.684,0.684s-0.306,0.684-0.684,0.684c-0.378,0-0.684-0.307-0.684-0.684S12.358,3.843,12.737,3.843z M10,1.448c0.755,0,1.368,0.613,1.368,1.368S10.755,4.185,10,4.185c-0.756,0-1.368-0.613-1.368-1.368S9.244,1.448,10,1.448z"
+                  ></path>
+                  <path
+                    d="M14.789,6.579H5.211v9.578l1.368,1.368h6.841l1.368-1.368V6.579z M12.052,12.052H7.948c-0.378,0-0.684-0.306-0.684-0.684c0-0.378,0.306-0.684,0.684-0.684h4.105c0.378,0,0.684,0.306,0.684,0.684C12.737,11.746,12.431,12.052,12.052,12.052z M12.052,9.316H7.948c-0.378,0-0.684-0.307-0.684-0.684s0.306-0.684,0.684-0.684h4.105c0.378,0,0.684,0.307,0.684,0.684S12.431,9.316,12.052,9.316z"
+                  ></path>
+                </svg>
+                <div class="card_container_pdf">
+                  <p class="name">Descargue contenido</p>
+                  <a href="./public/assets/pdfs/EspecificidadCss.pdf" download="./public/assets/pdfs/EspecificidadCss.pdf">Aqui</a>
+                  <p class="date">Abril 24, 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-gold">
+            <p class="blogs__card-title">Semantic Versioning</p>
+            <p class="blogs__card-caption">
+              Conoce porque es importante el manejar un versionado semantico en
+              tus aplicaciones y que significa.
+            </p>
+            <div class="blogs__card-info">
+              <p>3 min</p>
+              <div class="card__author">
+                <svg class="svg-icon1" viewBox="0 0 30 30">
+                  <polygon
+                    points="18.198,7.95 3.168,7.95 3.168,8.634 9.317,9.727 9.317,19.564 12.05,19.564 12.05,9.727 18.198,8.634 "
+                  ></polygon>
+                  <path
+                    d="M2.485,10.057v-3.41H2.473l0.012-4.845h1.366c0.378,0,0.683-0.306,0.683-0.683c0-0.378-0.306-0.683-0.683-0.683H1.119c-0.378,0-0.683,0.306-0.683,0.683c0,0.378,0.306,0.683,0.683,0.683h0.683v4.845C1.406,6.788,1.119,7.163,1.119,7.609v2.733c0,0.566,0.459,1.025,1.025,1.025c0.053,0,0.105-0.008,0.157-0.016l-0.499,5.481l5.9,2.733h0.931C8.634,13.266,5.234,10.458,2.485,10.057z"
+                  ></path>
+                  <path
+                    d="M18.169,6.584c-0.303-3.896-3.202-6.149-7.486-6.149c-4.282,0-7.183,2.252-7.484,6.149H18.169z M15.463,3.187c0.024,0.351-0.103,0.709-0.394,0.977c-0.535,0.495-1.405,0.495-1.94,0c-0.29-0.268-0.418-0.626-0.394-0.977C13.513,3.827,14.683,3.827,15.463,3.187z"
+                  ></path>
+                  <path
+                    d="M18.887,10.056c-2.749,0.398-6.154,3.206-6.154,9.508h0.933l5.899-2.733L18.887,10.056z"
+                  ></path>
+                </svg>
+                <div class="card_container_pdf">
+                  <p class="name">Descargue contenido</p>
+                  <a href="./public/assets/pdfs/SemanticVersioning.pdf" download="./public/assets/pdfs/SemanticVersioning.pdf">Aqui</a>
+                  <p class="date">Mayo 5, 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- wave -->
+      <section class="courses">
+        <h2>Cursos</h2>
+        <div class="courses_container">
+          <div class="courses_container_content">
+            <h3>Registrate al próximo curso:</h3>
+            <button type="button" class="">
+              <a class="btn" href="/src/scenes/indexRegister.html">Dale click!</a>
             </button>
           </div>
-        </div>
-        <div>
-          <svg width="100" class="background__semicolon" height="270" viewBox="0 0 100 270" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M0 238.442C34.8837 227.186 52.3256 209.79 52.3256 187.277L50 145.322L74.4186 181.137C67.4419 186.254 58.1395 189.324 47.6744 189.324C25.5814 189.324 4.65116 176.021 4.65116 153.508C4.65116 132.019 24.4186 117.692 50 117.692C82.5581 117.692 100 140.205 100 178.067C100 223.093 70.9302 254.815 16.2791 269.141L0 238.442ZM0 40.9448C0 18.4321 18.6047 0.0126953 46.5116 0.0126953C74.4186 0.0126953 93.0233 18.4321 93.0233 40.9448C93.0233 64.4808 74.4186 81.8769 46.5116 81.8769C18.6047 81.8769 0 64.4808 0 40.9448Z"
-              fill="#4E1074" fill-opacity="0.76" />
-          </svg>
-        </div>
-      </div>
-      <div class="header__members"></div>
-    </header>
-    <svg id="visual" class="background__rigth-wave" viewBox="0 0 900 900" width="900" height="900"
-      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-      <path
-        d="M873 900L873.2 878.5C873.3 857 873.7 814 871.5 771.2C869.3 728.3 864.7 685.7 861 642.8C857.3 600 854.7 557 855.5 514.2C856.3 471.3 860.7 428.7 860.5 385.8C860.3 343 855.7 300 854.3 257.2C853 214.3 855 171.7 852.5 128.8C850 86 843 43 839.5 21.5L836 0L900 0L900 21.5C900 43 900 86 900 128.8C900 171.7 900 214.3 900 257.2C900 300 900 343 900 385.8C900 428.7 900 471.3 900 514.2C900 557 900 600 900 642.8C900 685.7 900 728.3 900 771.2C900 814 900 857 900 878.5L900 900Z"
-        fill="#4E1074" stroke-linecap="round" stroke-linejoin="miter"></path>
-    </svg>
-    <svg id="visual" class="background__bottom-wave" viewBox="0 0 2000 600" width="2000" height="600"
-      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-      <path
-        d="M0 560L47.7 561.5C95.3 563 190.7 566 285.8 568C381 570 476 571 571.2 571.2C666.3 571.3 761.7 570.7 857 568.3C952.3 566 1047.7 562 1143 560C1238.3 558 1333.7 558 1428.8 560.7C1524 563.3 1619 568.7 1714.2 568.2C1809.3 567.7 1904.7 561.3 1952.3 558.2L2000 555L2000 601L1952.3 601C1904.7 601 1809.3 601 1714.2 601C1619 601 1524 601 1428.8 601C1333.7 601 1238.3 601 1143 601C1047.7 601 952.3 601 857 601C761.7 601 666.3 601 571.2 601C476 601 381 601 285.8 601C190.7 601 95.3 601 47.7 601L0 601Z"
-        fill="#2B133A" stroke-linecap="round" stroke-linejoin="miter"></path>
-    </svg>
-  </div>
-  <main class="hero">
-    <section class="hero__container">
-      <div>
-        <a href="./equipos.html">
-          <h2>Equipos</h2>
-        </a>
-        <ul>
-          <li>
-            Un equipo esta conformado por un grupo de personas con las mismas ganas de aprender sobre una temática en
-            específico.
-          </li>
-          <li>
-            Los equipos trabajan en proyectos, en dónde podrás aprender sobre el tema que más te interese practicando.
-          </li>
-          <li>
-            Reúnete con tu equipo y empieza a aprender ya!
-          </li>
-          <a href="./equipos.html" class="underline-animation hero__teams-link">Ver mas...</a>
-        </ul>
-      </div>
-      <div class="hero__teams">
-        <a href="./equipos.html#desarrollo-web">
-          <img src="/assets/imgs/web.png" alt="Logo equipo Desarrollo Web">
-        </a>
-        <a href="./equipos.html#inteligencia-artificial">
-          <img src="/assets/imgs/ia.png" alt="Logo equipo Inteligencia Artificial">
-        </a>
-        <a href="./equipos.html#ciberseguridad">
-          <img src="/assets/imgs/security.png" alt="Logo equipo Ciberseguridad">
-        </a>
-        <a href="./equipos.html#big-data">
-          <img src="/assets/imgs/big_data.png" alt="Logo equipo Big Data">
-        </a>
-      </div>
-    </section>
-    <section class="blogs">
-      <h2>Últimas publicaciones</h2>
-      <div class="blogs__container">
-        <div class="card">
-          <p class="blogs__card-title">Las 3 leyes del UX que necesitas conocer</p>
-          <p class="blogs__card-caption">Conoce las leyes que te ayudarán a mejorar tu percepción del diseño</p>
-          <div class="blogs__card-info">
-            <p>3 min</p>
-            <div class="card__author">
-              <img src="/assets/imgs/author.png" alt="Autor">
-              <div>
-                <p class="name">Alisson Taco</p>
-                <p class="date">Abril 13, 2021</p>
-              </div>
-            </div>
+          <div class="courses_container_img">
+            <img src="./public/assets/images/curso_js_mayo.jpeg" alt="" />
           </div>
         </div>
-        <div class="card card-black">
-          <p class="blogs__card-title">Las 3 leyes del UX que necesitas conocer</p>
-          <p class="blogs__card-caption">Conoce las leyes que te ayudarán a mejorar tu percepción del diseño</p>
-          <div class="blogs__card-info">
-            <p>3 min</p>
-            <div class="card__author">
-              <img src="/assets/imgs/author.png" alt="Autor">
-              <div>
-                <p class="name">Alisson Taco</p>
-                <p class="date">Abril 13, 2021</p>
-              </div>
-            </div>
-          </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__logo">
+          <img src="/assets/imgs/logo_name.png" alt="Logo" />
         </div>
-        <div class="card card-rose">
-          <p class="blogs__card-title">Las 3 leyes del UX que necesitas conocer</p>
-          <p class="blogs__card-caption">Conoce las leyes que te ayudarán a mejorar tu percepción del diseño</p>
-          <div class="blogs__card-info">
-            <p>3 min</p>
-            <div class="card__author">
-              <img src="/assets/imgs/author.png" alt="Autor">
-              <div>
-                <p class="name">Alisson Taco</p>
-                <p class="date">Abril 13, 2021</p>
-              </div>
-            </div>
-          </div>
+        <div class="footer__text">
+          <p>Hecho con 💚 desde Ecuador</p>
         </div>
-        <div class="card card-gold">
-          <p class="blogs__card-title">Las 3 leyes del UX que necesitas conocer</p>
-          <p class="blogs__card-caption">Conoce las leyes que te ayudarán a mejorar tu percepción del diseño</p>
-          <div class="blogs__card-info">
-            <p>3 min</p>
-            <div class="card__author">
-              <img src="/assets/imgs/author.png" alt="Autor">
-              <div>
-                <p class="name">Alisson Taco</p>
-                <p class="date">Abril 13, 2021</p>
-              </div>
-            </div>
-          </div>
+        <div class="footer__links">
+          <a
+            href="https://es-la.facebook.com/club.software.epn/"
+            target="_blank"
+            title="Ir al Facebook"
+          >
+            <i class="bx bxl-facebook-circle bx-lg"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/club.software.epn/"
+            target="_blank"
+            title="Ir al Instagram"
+          >
+            <i class="bx bxl-instagram bx-lg"></i>
+          </a>
         </div>
       </div>
-    </section>
-    <svg id="visual" class="hero__background-bottom-wave" viewBox="0 0 2000 600" width="2000" height="600"
-      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-      <path
-        d="M0 563L47.7 565.8C95.3 568.7 190.7 574.3 285.8 574.2C381 574 476 568 571.2 567.2C666.3 566.3 761.7 570.7 857 574.3C952.3 578 1047.7 581 1143 580.3C1238.3 579.7 1333.7 575.3 1428.8 572.7C1524 570 1619 569 1714.2 571C1809.3 573 1904.7 578 1952.3 580.5L2000 583L2000 601L1952.3 601C1904.7 601 1809.3 601 1714.2 601C1619 601 1524 601 1428.8 601C1333.7 601 1238.3 601 1143 601C1047.7 601 952.3 601 857 601C761.7 601 666.3 601 571.2 601C476 601 381 601 285.8 601C190.7 601 95.3 601 47.7 601L0 601Z"
-        fill="#5C0F8B" stroke-linecap="round" stroke-linejoin="miter"></path>
-    </svg>
-  </main>
-  <footer class="footer">
-    <div class="footer__container">
-      <div class="footer__logo">
-        <img src="/assets/imgs/logo_name.png" alt="Logo">
-      </div>
-      <div class="footer__text">
-        <p>Hecho con 💚 desde Ecuador</p>
-      </div>
-      <div class="footer__links">
-        <a href="https://es-la.facebook.com/club.software.epn/" target="_blank" title="Ir al Facebook">
-          <i class='bx bxl-facebook-square bx-lg'></i>
-        </a>
-        <!-- <a href="#">
-          <img src="/assets/svgs/instagram.svg" alt="Club de software Instagram">
-        </a> -->
-        <a href="https://www.instagram.com/club.software.epn/" target="_blank" title="Ir al Instagram">
-          <i class='bx bxl-instagram bx-lg'></i>
-        </a>
-      </div>
-    </div>
-  </footer>
-
-  <script type="module" src="./src/js/main.js"></script>
-</body>
-
+    </footer>
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
 </html>
