@@ -276,8 +276,15 @@ button {
   object-fit: contain;
 }
 .hero__team-member i {
-  font-size: rem;
+  font-size: 4rem;
+  /* padding: 1rem; */
 }
+/* .hero__team-member {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  align-content: center;
+} */
 
 .hero .blogs {
   padding: 1rem;
