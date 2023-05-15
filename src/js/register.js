@@ -13,7 +13,7 @@ formulario.addEventListener("submit", async (e) => {
 
   try {
     await fetch(
-      "https://sheet.best/api/sheets/a5e09038-a394-4a9e-99cc-639092f611e0",
+      "https://sheet.best/api/sheets/2e32783d-f39d-4853-8015-087fce224e67",
       {
         method: "POST",
         mode: "cors",
