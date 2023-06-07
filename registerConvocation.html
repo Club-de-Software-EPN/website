@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./public/assets/imgs/favicon.ico"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/scenes/register.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Convocatoria</title>
+  </head>
+  <body>
+    <div class="convocation_container">
+      <nav>
+        <h2>Postula</h2>
+        <a href="./index.html" class="header__logo">
+          <img src="./public/assets/svgs/club_logo.svg" alt="" />
+        </a>
+        <a class="underline-animation" href="./index.html">Home</a>
+      </nav>
+      <main class="convocation_main" id="convocation_main">
+        <div class="convocation_conten">
+          <form id="formulary">
+            <label
+              >Nombres <br />
+              <input
+                type="text"
+                id="nombres"
+                name="nombres"
+                autofocus
+                required
+                maxlength="25"
+            /></label>
+            <label
+              >Apellidos <br />
+              <input
+                type="text"
+                id="apellidos"
+                name="apellidos"
+                required
+                maxlength="25"
+            /></label>
+            <label
+              >Correo <br />
+              <input
+                type="email"
+                id="correo"
+                name="correo"
+                placeholder="software@gmail.com"
+                required
+                maxlength="40" /></label
+            ><label
+              >Celular <br />
+              <input
+                type="text"
+                id="celular"
+                maxlength="10"
+                required
+                name="celular"
+                placeholder="Ejemplo 0988723311"
+            /></label>
+            <label
+              >Semestre <br />
+              <input
+                type="text"
+                id="semestre"
+                name="semestre"
+                required
+                maxlength="4"
+                placeholder="Ejemplo: 5to"
+            /></label>
+            <label>
+              Describe en pocas lineas un propósito que motive tu postulación.
+              <br />
+              <textarea
+                id="motivo"
+                name="motivo"
+                cols="30"
+                rows="5"
+                required
+                maxlength="300"
+              ></textarea>
+            </label>
+            <button type="submit" class="btn">
+              <i class="bx bx-mail-send"></i>Enviar
+            </button>
+          </form>
+        </div>
+        <div class="convocation_container_img">
+          <img src="./public/assets/images/team.svg" alt="" />
+          <p>
+            ¡Únete a la directiva del Club de Software! Si tienes ideas
+            innovadoras y quieres impulsar el crecimiento de nuestra comunidad
+            de tecnología, esta es tu oportunidad. No se requiere experiencia
+            previa
+          </p>
+        </div>
+      </main>
+      <div id="exito" class="exito inactive">
+        <i class="bx bx-check-circle"></i>
+        <p>Tu registro fue exitoso!</p>
+        <a class="underline-animation" href="./index.html"
+          ><i class="bx bx-home-smile"></i
+        ></a>
+      </div>
+    </div>
+    <script type="module" src="./src/js/registerConvocatoria.js"></script>
+  </body>
+</html>

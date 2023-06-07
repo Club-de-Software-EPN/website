@@ -55,7 +55,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-  /* width: 4rem; */
 }
 
 button {
@@ -162,7 +161,7 @@ button {
   padding-bottom: 1rem;
   border-bottom: 1px solid #fff;
 }
-.header__logo{
+.header__logo {
   width: 4rem;
   margin: 1rem;
 }
@@ -277,14 +276,7 @@ button {
 }
 .hero__team-member i {
   font-size: 4rem;
-  /* padding: 1rem; */
 }
-/* .hero__team-member {
-  display: flex;
-  justify-content:center;
-  align-items:center;
-  align-content: center;
-} */
 
 .hero .blogs {
   padding: 1rem;
@@ -502,7 +494,8 @@ footer {
 .courses {
   margin-top: 2rem;
 }
-.courses h2 {
+.courses h2,
+.convocatoria h2 {
   display: inline-block;
   line-height: 1;
   font-size: 3rem;
@@ -511,7 +504,8 @@ footer {
   border-bottom: 2px solid var(--primary-color);
 }
 
-.courses_container {
+.courses_container,
+.convocatoria_container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -525,7 +519,8 @@ footer {
   align-items: center;
   gap: 3rem;
 }
-.courses_container_img {
+.courses_container_img,
+.convocatoria_container_img {
   width: 50%;
 }
 .courses_container_img img {
@@ -560,4 +555,175 @@ footer {
   .header__info {
     margin-top: 20rem;
   }
+  .convocatoria h2 {
+    margin-left: 0;
+  }
+  .convocatoria_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .convocatoria_container_img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .convocatoria_container_img img {
+    width: 100%;
+  }
+  .convocatoria_container_content {
+    gap: 2rem;
+  }
+  .convocatoria_container_content h3 {
+    text-align: center;
+  }
+  .convocation_main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+/* convocatoria */
+.convocatoria {
+  margin-top: 2rem;
+}
+.convocatoria_container_img img {
+  border-radius: 5px;
+  transition: 2s;
+  width: 90%;
+}
+.convocatoria_container {
+  border: 1px solid #fff;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.convocatoria_container_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.convocatoria_container_content h3 {
+  margin-bottom: 2rem;
+  color: var(--button-color);
+  letter-spacing: 0.2rem;
+}
+.convocatoria_container_content p {
+  line-height: 3rem;
+  text-align: justify;
+  user-select: none;
+}
+.convocation_container {
+  width: 100%;
+}
+.convocation_container nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav h2 {
+  font-size: 3rem;
+  border-bottom: 1px solid #fff;
+}
+.convocation_conten {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+.convocation_conten form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: 1.5rem;
+  padding-left: 10rem;
+}
+.convocation_conten form input {
+  width: 100%;
+  height: 3rem;
+}
+.convocation_conten form textarea {
+  width: 100%;
+}
+.convocation_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.convocation_container_img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.convocation_container_img img {
+  width: 50%;
+  padding: 2rem;
+}
+.convocation_container_img p {
+  width: 60%;
+  margin: 5rem 0;
+  opacity: 0.7;
+  text-align: justify;
+  user-select: none;
+}
+@media (max-width: 680px) {
+  .convocation_conten form {
+    padding-left: 0rem;
+    padding: 0 2rem;
+  }
+  .convocation_main {
+    padding-top: 2rem;
+  }
+  .convocation_container nav {
+    width: 100%;
+    /* border-bottom: none; */
+    border-bottom: 1px solid #fff;
+    position: sticky;
+    top: 0;
+    background-color: var(--primary-darken-color);
+    z-index: 9;
+  }
+  .convocation_container nav h2 {
+    border-bottom: none;
+    font-weight: 500;
+  }
+  .convocation_conten form input {
+    width: 100%;
+    padding-left: 1rem;
+  }
+  .convocation_conten form textarea {
+    width: 100%;
+  }
+  .convocation_container_img p {
+    padding: 0 3rem;
+    width: 100%;
+  }
+  .convocation_container_img img {
+    width: 80%;
+    padding-top: 3rem;
+  }
+}
+.exito {
+  display: flex;
+  gap: 1rem;
+  margin-top: 15rem;
+  padding: 4rem;
+  border: 1px solid #90df14;
+  border-radius: 0.5rem;
+}
+.exito i {
+  font-size: 5rem;
+  color: #8acc20;
+}
+.exito p {
+  font-size: 3rem;
+  color: #90df14;
+}
+.inactive {
+  display: none;
 }

@@ -4,12 +4,12 @@ const exito = document.getElementById("exito");
 
 formulario.addEventListener("submit", async (e) => {
   e.preventDefault();
-  const data = {
-    Id: 10,
-    Name: "Jack Doe",
-    Age: 97,
-    "Created at": new Date(),
-  };
+  // const data = {
+  //   Id: 10,
+  //   Name: "Jack Doe",
+  //   Age: 97,
+  //   "Created at": new Date(),
+  // };
 
   try {
     await fetch(
