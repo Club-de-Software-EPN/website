@@ -9,7 +9,8 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         teams: resolve(__dirname, 'equipos.html'),
         proyect: resolve(__dirname, 'proyect.html'),
-        register: resolve(__dirname, 'indexRegister.html'),
+        //register: resolve(__dirname, 'indexRegister.html'),
+	convocation: resolve(__dirname, 'registerConvocation.html')
       }
     }
   }
