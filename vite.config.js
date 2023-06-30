@@ -10,7 +10,7 @@ export default defineConfig({
         teams: resolve(__dirname, 'equipos.html'),
         proyect: resolve(__dirname, 'proyect.html'),
         //register: resolve(__dirname, 'indexRegister.html'),
-	convocation: resolve(__dirname, 'registerConvocation.html')
+	// convocation: resolve(__dirname, 'registerConvocation.html')
       }
     }
   }
